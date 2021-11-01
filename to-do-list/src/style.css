@@ -1,0 +1,162 @@
+body{
+    margin : 0;
+    /* 100 viewport height */
+    height : 100vh;
+    display :  flex;
+    flex-direction: column;
+    width:100%;
+    overflow-x: hidden;
+}
+
+h1{
+    margin: 0;
+}
+
+
+button {
+    cursor: pointer;
+    background-attachment: whitesmoke;
+}
+
+ul{
+    margin:0;
+    padding:0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+li{
+    list-style-type: none;
+}
+
+.header{
+    height : 50px;
+    color : white;
+    background-color: #6e69a8;
+}
+
+.header__logo{
+    font-size: 32px;
+    text-align: center;
+    
+    /* 수직정렬방법*/
+    height: 50px;
+    line-height: 50px;
+}
+
+.options {
+    text-align: center;
+    padding : 10px 0;
+    background-color: #efeeff;
+}
+
+.options__btn {
+    border : 0;
+    background-color: #6e69a8;
+    color : white;
+    cursor : pointer;
+    border-radius: 10%;
+}
+
+/* flex-container */
+.todos {
+    background-color: #fff8ef;
+    display : flex;
+    flex-grow : 1;
+    justify-content: center;
+    width:100%;
+    height: 100%;
+}
+
+.todos__header{
+    border : 3px solid #6e69a8;
+    padding: 3px;
+    border-radius: 25% 0%;
+}
+/* flex-items */
+
+.todos__today{
+    width:0;
+    border-right: 3px dashed #6e69a8;
+    display: flex;
+    flex-direction: column;
+    /* justify-content : center */
+    align-items: center;
+    visibility: hidden;
+    transition: all 300ms ease;
+}
+
+.todos__tomorrow{
+    width:0;
+    display: flex;
+    flex-direction: column;
+    /* justify-content : center */
+    align-items: center;
+    visibility: hidden;
+    transition: all 300ms ease;
+}
+
+.todos__today.open,
+.todos__tomorrow.open{
+    width:100%;
+    visibility: visible;
+}
+.todos__items{
+    flex-grow : 1;
+    width: 100%;
+    padding: 0 20px;
+}
+
+
+.todos__item{
+    display : flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom : 1px solid black;
+}
+
+.todos__name{
+    height: 36px;
+    line-height : 36px;
+}
+.todos__btn-wrapper {
+    padding: 5px 0;
+  }
+.todos__input {
+    width:100%;
+    border: 0;
+    outline: 0;
+    background-color: #efeeff;
+  }
+
+.todos__delete {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    border: 0;
+    color: white;
+    background-color: #6e69a8;
+    border-radius: 25%;
+  }
+  
+.todos__add {
+    font-size: 15px;
+    color:white;
+    background-color: #6e69a8;
+    border: 0;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+  }
+
+.footer{
+    color : white;
+    background-color: #6e69a8;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}

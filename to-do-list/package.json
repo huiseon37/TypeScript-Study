@@ -1,0 +1,8 @@
+{
+  "devDependencies": {
+    "typescript": "^4.4.4"
+  },
+  "scripts": {
+    "start": "tsc && node src/main.js"
+  }
+}
