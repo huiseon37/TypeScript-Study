@@ -43,7 +43,7 @@ const onAdd : Function = (index:number) : void =>{
 
 //얘는 왜 이걸까..진짜 모르겠다...
 const nav : HTMLElement | null = document.querySelector(".options");
-const todos : NodeListOf<Element> = document.querySelectorAll(".todos > section");
+const todos : NodeListOf<HTMLElement> = document.querySelectorAll(".todos > section");
 
 nav?.addEventListener("click",(e:MouseEvent) : void=> {
     if(e.target instanceof HTMLButtonElement){
