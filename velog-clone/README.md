@@ -2,6 +2,7 @@
 
 ### 기본과제
 
+- velog-clone 사이트를 typescript를 사용하여 구현하였습니다.
 - velog 사이트를 보고 html 구조를 짜고 구현하였습니다.
 - velog 사이트의 개발자 도구를 통해 각 html의 css를 파악하여 css를 구현하였습니다.
 - 오늘 / 이번 주/ 이번 달/ 올해 dropbox를 구현하고, 클릭 시 색이 변하며 box안의 text가 변경되도록 구현하였습니다.
